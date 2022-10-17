@@ -56,3 +56,22 @@ p {
     box-shadow: 5px 10px 5px #888888;   /* Added a third number because this looks better with a blur radius. */
     /* TODO: round your corners with a border-radius */
 }
+
+/* Though it is not a requirement, let me add something to make takinge notes about code eaiser. */
+code.tag {
+    background-color: #eee;         /* an off-white background */
+    color: #000;
+}
+code.tag:before {content: "<"; }    /* Prepend code with the tag class with a < so we don't have to use &lt; */
+code.tag:after {content: ">"; }     /* Append code with the tag class with a > so we don't have to use &gt; */
+
+kbd {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #888;
+    /* This is why we don't universally set all of our margins and padding to zero. */
+    margin: 1px;
+    padding: 1px;
+}

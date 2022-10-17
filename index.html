@@ -11,34 +11,37 @@
     <header id="top">
         <h1>Prework Study Guide</h1>
         <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bowtie." />
+        <h2>✨Open the Console to see what's happening.✨</h2>
     </header>
     <main>
         <!-- Note: Additional formatting and comments were added. -->
         <section class="card" id="html-section">
             <h2>HTML</h2>
             <ul>
-                <li>The <code>&lt;head&gt;</code> element contains infomation about the webpage.</li>
-                <li>The <code>&lt;body&gt;</code> element represents the visible content to show to the user.</li>
-                <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> are known as <dfn>semantic elements</dfn>. They work the same as <code>&lt;div&gt;</code> but are easier to read and identify the parts of a webpage.</li>
-                <li>Use the <code>&lt;code&gt;</code> tag to better identify inline code examples.</li>
-                <li>Use the <code>&lt;pre&gt;</code> tag to define a block of code. This code will be formatted with monospace font where the contents cannot be formatted and line breaks are recognized without using <code>&lt;br/&gt;</code> elements.</li>
-                <li>Use the <code>&lt;p&gt;</code> tag to define a paragraph of text.</li>
-                <li>Use the <code>&lt;h1&gt;</code> through <code>&lt;h6&gt; tags to define up to six levels of headers from large to small.</code></li>
+                <li>The <code class="tag">head</code> element contains infomation about the webpage.</li>
+                <li>The <code class="tag">body</code> element represents the visible content to show to the user.</li>
+                <li><code class="tag">header</code>, <code class="tag">footer</code>, <code class="tag">main</code>, <code class="tag">aside</code>, <code class="tag">nav</code>, <code class="tag">section</code>, <code class="tag">article</code> are known as <dfn>semantic elements</dfn>. They work the same as <code class="tag">div</code> but are easier to read and identify the parts of a webpage.</li>
+                <li>Use the <code class="tag">code</code> tag to better identify inline code examples.</li>
+                <li>Use the <code class="tag">pre</code> tag to define a block of code. This code will be formatted with monospace font where the contents cannot be formatted and line breaks are recognized without using <code class="tag">br/</code> elements.</li>
+                <li>Use the <code class="tag">p</code> tag to define a paragraph of text.</li>
+                <li>Use the <code class="tag">h1</code> through <code class="tag">h6</code> tags to define up to six levels of headers from large to small.</li>
                 <li>There are three kinds of lists: unordered, ordered, and defintion.
                     <ul>
-                        <li><dfn>unordered lists</dfn>, or bulletted lists, are defined with the <code>&lt;ul&gt;</code> tag.</code></li>
-                        <li><dfn>ordered lists</dfn>, or numbered lists, are defined with the <code>&lt;ol&gt;</code> tag.</code></li>
-                        <li><dfn>defintion lists</dfn> are defined with the <code>&lt;dl</code> tag. Unlike the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags that use the <code>&lt;li&gt;</code> tag for <dfn>list items</dfn>, the <code>&lt;dl&gt;</code> tag uses <code>&lt;dt&gt;</code> for <dfn>definion terms</dfn> and <code>&lt;dd&gt;</code> and <dfn>definition descriptions</dfn>.</li>
+                        <li><dfn>unordered lists</dfn>, or bulletted lists, are defined with the <code class="tag">ul</code> tag.</li>
+                        <li><dfn>ordered lists</dfn>, or numbered lists, are defined with the <code class="tag">ol</code> tag.</li>
+                        <li><dfn>defintion lists</dfn> are defined with the <code class="tag">dl</code> tag. Unlike the <code class="tag">ul</code> and <code class="tag">ol</code> tags that use the <code class="tag">li</code> tag for <dfn>list items</dfn>, the <code class="tag">dl</code> tag uses <code class="tag">dt</code> for <dfn>definion terms</dfn> and <code class="tag">dd</code> and <dfn>definition descriptions</dfn>.</li>
                     </ul>
                 </li>
                 <li>Lists can be nested, as seen above in that previous point.</li>
-                <li>List items (<code>&lt;li&gt;</code>) can be consecutively used.</li>
-                <li>Defintion lists are underappreciated. You can use <code>&lt;dd&gt;</code> consecutively to describe the most recently <code>&lt;dt&gt;</code> that was used. You should use <code>&lt;dl&gt;</code> elements for terms and defintions over the other types of lists, and unless you are explicitly writing about something should use this instead of a header and a bunch of paragraphs.</li>
-                <li>The <code>&lt;dfn&gt;</code> element is a tag that denotes a defintion. It might look italic, but it does not have the same meaning as <code>em</code> which is used for italics.</li>
-                <li><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> are recommended over <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> for bold and italic text, respectively.</code></li>
+                <li>List items (<code class="tag">li</code>) can be consecutively used.</li>
+                <li>Defintion lists are underappreciated. You can use <code class="tag">dd</code> consecutively to describe the most recently <code class="tag">dt</code> that was used. You should use <code class="tag">dl</code> elements for terms and defintions over the other types of lists, and unless you are explicitly writing about something should use this instead of a header and a bunch of paragraphs.</li>
+                <li>The <code class="tag">dfn</code> element is a tag that denotes a defintion. It might look italic, but it does not have the same meaning as <code class="tag">em</code> which is used for italics.</li>
+                <li><code class="tag">strong</code> and <code class="tag">em</code> are recommended over <code class="tag">b</code> and <code class="tag">i</code> for bold and italic text, respectively.</li>
                 <li><code>&amp;lt;</code>, <code>&amp;gt;</code>, and <code>&amp;amp;</code> are <dfn>escape entities</dfn> used in HTML for less than (<code>&lt;</code>), greater than (<code>&gt;</code>), and the ampersand (<code>&amp;</code>). You should use these entities when writing about HTML tags. There's also <code>&amp;quot;</code> and <code>&amp;apos;</code> for double (<code>&quot;</code>) and single (<code>&apos;</code>) quotes</li>
                 <li>Most HTML tags fall into two cagetories: <dfn>block elements</dfn> and <dfn>inline elements</dfn>.</li>
-                <li>The most generic block element is the <code>&lt;div&gt;</code> (<dfn>division</dfn>); the most generic inline element is the <code>&lt;span&gt;</code> (<dfn>span</dfn>); Both elements are described as <dfn>non-semantic elements</dfn>.</li>
+                <li>The most generic block element is the <code class="tag">div</code> (<dfn>division</dfn>); the most generic inline element is the <code class="tag">span</code> (<dfn>span</dfn>); Both elements are described as <dfn>non-semantic elements</dfn>.</li>
+                <li>Use the <code class="tag">kbd</code> tag to denote <dfn>keyboard commands</dfn>. Keyboard commands should use a monospace font, however to enhance their appearance, I've added some style features to this tag to my CSS file.</li>
+                <li>Use the <code class="tag">var</code> tag inside of a <code class="tag">code</code> tag to denote variables inside of code blocks. You won't be able to do this in a <code class="tag">pre</code> tag because <code class="tag">pre</code> tags will not process nested tags.</li>
                 <!-- Enter your HTML notes here -->
             </ul>
         </section>
@@ -49,6 +52,7 @@
                 <li>A <code>margin</code> indicates how much space we want around the outside of an element.</li>
                 <li>A <code>padding</code> indicates how much space we want around the content inside an element.</li>
                 <li>If you are going to use <code>box-shadow</code>, include a <code>blur-radius</code> to make your shadows look better.</li>
+                <li>Use the <code>:before</code> and <code>:after</code> pseudo-element with the <code>content</code> attribute to write to insert content before and after code. (I've done it everywhere the <code>.tag</code> class is used to write about HTML tags better.)</li>
                 <!-- Enter your CSS notes here -->
             </ul>
         </section>
@@ -67,7 +71,16 @@
         <section class="card" id="javascript-section">
             <h2>JavaScript</h2>
             <ul>
-                <li>Enter your JavaScript notes here</li>
+                <li>In the old days, the <code class="tag">script</code> would go in the header. It still can, but it's much easier just to stick <code class="tag">script</code> in the bottom of the HTML <code class="tag">body</code> after all the other HTML and CSS has loaded.</li>
+                <li>Contrary to this course's instructions, you should <strong>NOT</strong> be using <code>var</code> to declare variables. You should be using <code>let</code> or <code>const</code>.</li>
+                <li><code>let</code> should be used to declare variables whose value should change. The values doesn't need to be written when the variable is declared, but it can be.</li>
+                <li><code>const</code> should be used to declare variables whose value will not change. The value must written in the declaration.</li>
+                <li>Press <kbd>F12</kbd> in Chrome to toggle the Chrome Developer Tools.</li>
+                <li>If you use a variable before it is defined and use it as an argument in <code>console.log</code>, the DevTools console will return <code>undefined</code>.</li>
+                <li><code>if(<var>test</var>){<var>statements</var>}</code> is an <dfn>if statement</dfn> which is a type of <dfn>conditional statement</dfn>. The <code><var>test</var></code> is a type of variable called a <dfn>Boolean</dfn> which will return <code>true</code> or <code>false</code>. If the <code><var>test</var></code> returns <code>true</code>, it will execute the <code><var>statements</var></code> inside the curly braces (<code>{}</code>).</li>
+                <li><code>if(<var>test</var>){<var>run_if_true</var>}else{<var>run_if_false</var>}</code> is an <dfn>if-else statement</dfn>. It is similar to the if statement in that if <code><var>test</var></code> returns <code>true</code> it will run <code><var>run_if_true</var></code>, but if <code><var>test</var></code> returns <code>false</code> it will run <code><var>run_if_false</var></code> instead.</li>
+                <!-- TODO: List what is a truthy and falsy statement in JavaScript later. -->
+                <li>An <dfn>else-if</dfn> statement can ba added to an if statement or before the else part of an if-else statement to add additional conditional statements.</li>
                 <!-- Enter your JavaScript notes here -->
             </ul>
         </section>
@@ -75,5 +88,6 @@
     <footer>
         <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
